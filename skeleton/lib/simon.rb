@@ -31,7 +31,7 @@ class Simon
 #    debugger
     unless @game_over
     round_success_message
-    sleep(3)
+    sleep(1)
     @sequence_length += 1
     end
 
@@ -66,12 +66,13 @@ class Simon
   end
 
   def round_success_message
+    system("clear")
     puts "You got it!"
 
   end
 
   def game_over_message
-    puts "Game Over! Rexy Poo is Sexy Poo"
+    puts "Game Over!"
     p @seq
   end
 
